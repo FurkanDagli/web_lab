@@ -43,22 +43,3 @@ class Comment(db.Model):
         return '<Comment {}>'.format(self.content)
 
 
-
-"""
-u1 = User(username='Ahmet', email='ahmet@mail.com')
-u2 = User(username='Kagan', email='kagan@mail.com')
-db.session.add(u1)
-db.session.add(u2)
-db.session.commit()
-
-
-p1 = Post(body='Hello World!', author=u1)
-p2 = Post(body='Hello World!', author=u2)
-db.session.add_all([p1, p2])
-db.session.commit()
-
-c1 = Comment(content='Nice post!', post=p1)
-c2 = Comment(content='Thanks for sharing', post=p2)
-db.session.add_all([c1, c2])
-db.session.commit()
-"""
